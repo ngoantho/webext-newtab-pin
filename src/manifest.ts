@@ -1,4 +1,4 @@
-import {defineManifest} from '@crxjs/vite-plugin'
+import { defineManifest } from '@crxjs/vite-plugin'
 
 import packageData from '../package.json'
 
@@ -7,7 +7,7 @@ const isDev = process.env.NODE_ENV == 'development'
 
 export default defineManifest({
   name:
-      `${packageData.displayName || packageData.name}${isDev ? ` ➡️ Dev` : ''}`,
+    `${packageData.displayName || packageData.name}${isDev ? ` -> Dev` : ''}`,
   description: packageData.description,
   version: packageData.version,
   manifest_version: 3,
@@ -17,7 +17,6 @@ export default defineManifest({
     48: 'img/logo-48.png',
     128: 'img/logo-128.png',
   },
-
   background: {
     service_worker: 'src/background/index.ts',
     type: 'module',

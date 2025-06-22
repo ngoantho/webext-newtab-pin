@@ -1,9 +1,9 @@
 {
   "name": "new-tab-pin",
-  "displayName": "new-tab-pin",
+  "displayName": "Pin New Tabs",
   "version": "0.0.0",
   "author": "Anthony Ngo",
-  "description": "",
+  "description": "An extension to always pin a new tab",
   "type": "module",
   "license": "MIT",
   "keywords": [
