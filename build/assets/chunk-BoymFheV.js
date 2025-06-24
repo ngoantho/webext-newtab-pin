@@ -1,0 +1,1 @@
+async function t(a){try{await chrome.tabs.update(a,{pinned:!0})}catch{}}chrome.tabs.onCreated.addListener(async function(a){a.id!==void 0&&await t(a.id)});chrome.tabs.onDetached.addListener(async function(a){await t(a)});

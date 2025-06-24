@@ -1,9 +1,18 @@
 // This file contains the background script for the Chrome extension. It listens
 // for the event when a new tab is created and automatically pins it.
 
-//  Listen for the creation of a new tab and pin it automatically
-chrome.tabs.onCreated.addListener(function(tab) {
+async function updateTab(tabId: number) {
+  try {
+    await chrome.tabs.update(tabId, { pinned: true });
+  } catch (error) { }
+}
+
+chrome.tabs.onCreated.addListener(async function (tab) {
   if (tab.id !== undefined) {
-    chrome.tabs.update(tab.id, {pinned: true});
+    await updateTab(tab.id);
   }
-})
+});
+
+chrome.tabs.onDetached.addListener(async function (tabId) {
+  await updateTab(tabId);
+});

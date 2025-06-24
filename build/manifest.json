@@ -1,5 +1,5 @@
 {
-  "name": "Pin New Tabs -> Dev",
+  "name": "Pin New Tabs",
   "description": "An extension to always pin a new tab",
   "version": "0.0.0",
   "manifest_version": 3,
@@ -15,32 +15,33 @@
   },
   "content_scripts": [
     {
+      "js": [
+        "assets/chunk-l0sNRNKZ.js"
+      ],
       "matches": [
         "http://*/*",
         "https://*/*"
-      ],
-      "js": [
-        "src/contentScript/index.ts-loader.js"
       ]
     }
   ],
   "web_accessible_resources": [
     {
+      "matches": [],
       "resources": [
         "img/logo-16.png",
         "img/logo-32.png",
         "img/logo-48.png",
         "img/logo-128.png"
       ],
-      "matches": []
+      "use_dynamic_url": false
     },
     {
       "matches": [
-        "<all_urls>"
+        "http://*/*",
+        "https://*/*"
       ],
       "resources": [
-        "**/*",
-        "*"
+        "assets/chunk-l0sNRNKZ.js"
       ],
       "use_dynamic_url": false
     }
