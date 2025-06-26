@@ -4,7 +4,9 @@
 async function updateTab(tabId: number) {
   try {
     await chrome.tabs.update(tabId, { pinned: true });
-  } catch (error) { }
+  } catch (error) {
+    console.error("Failed to pin tab: ", error);
+  }
 }
 
 chrome.tabs.onCreated.addListener(async function (tab) {
