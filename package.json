@@ -1,9 +1,9 @@
 {
-  "name": "new-tab-pin",
-  "displayName": "Pin New Tabs",
+  "name": "pin-tabs-on-detach",
+  "displayName": "Pin Detached Tabs",
   "version": "0.0.0",
   "author": "Anthony Ngo",
-  "description": "An extension to always pin a new tab",
+  "description": "Pin tabs on detach",
   "type": "module",
   "license": "MIT",
   "keywords": [

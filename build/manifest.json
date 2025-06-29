@@ -1,6 +1,6 @@
 {
-  "name": "Pin New Tabs",
-  "description": "An extension to always pin a new tab",
+  "name": "Pin Detached Tabs",
+  "description": "Pin tabs on detach",
   "version": "0.0.0",
   "manifest_version": 3,
   "icons": {
