@@ -1,5 +1,5 @@
 {
-  "name": "Pin Detached Tabs",
+  "name": "Pin tabs on create/detach",
   "description": "Pin tabs on detach",
   "version": "0.0.0",
   "manifest_version": 3,

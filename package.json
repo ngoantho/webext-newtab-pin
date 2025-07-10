@@ -1,6 +1,6 @@
 {
-  "name": "pin-tabs-on-detach",
-  "displayName": "Pin Detached Tabs",
+  "name": "pin-tabs",
+  "displayName": "Pin tabs on create/detach",
   "version": "0.0.0",
   "author": "Anthony Ngo",
   "description": "Pin tabs on detach",
